@@ -1,0 +1,202 @@
+/* --------------------------------------------------
+   Reset / Base
+-------------------------------------------------- */
+
+body, h1, h2, h3, p, ul, li, form, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* --------------------------------------------------
+   Geral / Body
+-------------------------------------------------- */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Um tom de cinza claro para o fundo geral */
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Branco para o container principal */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------------------------------
+   Cabeçalho
+-------------------------------------------------- */
+
+.header {
+    background-color: #000; /* Preto para o fundo do cabeçalho */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    max-height: 80px;
+    /* Você pode adicionar uma borda vermelha sutil ao redor do logo, se quiser: */
+    /* border: 2px solid #cc0000;
+    border-radius: 5px; */
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #cc0000; /* Vermelho para o título */
+}
+
+/* --------------------------------------------------
+   Entrada do Diário
+-------------------------------------------------- */
+
+.entry {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff; /* Branco para o fundo das entradas */
+}
+
+/* --------------------------------------------------
+   Data da Entrada
+-------------------------------------------------- */
+
+.entry-date {
+    display: block;
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+    /* Você pode destacar levemente a data com a cor preta: */
+    /* color: #000; */
+}
+
+/* --------------------------------------------------
+   Conteúdo da Entrada
+-------------------------------------------------- */
+
+.entry-content p {
+    margin-bottom: 1em;
+    color: #333; /* Mantendo o preto para a leitura */
+}
+
+/* --------------------------------------------------
+   Seção de Comentários
+-------------------------------------------------- */
+
+.comments-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #000; /* Linha preta para separar os comentários */
+}
+
+.comments-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #cc0000; /* Vermelho para o título dos comentários */
+}
+
+/* --------------------------------------------------
+   Lista de Comentários
+-------------------------------------------------- */
+
+.comments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comments-list li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    color: #333; /* Preto para o texto dos comentários */
+}
+
+.comments-list li:last-child {
+    border-bottom: none;
+}
+
+/* --------------------------------------------------
+   Formulário de Comentário
+-------------------------------------------------- */
+
+.comment-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    color: #333; /* Preto para o texto da área de comentário */
+}
+
+.comment-form button {
+    background-color: #cc0000; /* Vermelho para o botão de comentar */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold; /* Deixando o texto do botão em negrito */
+}
+
+.comment-form button:hover {
+    background-color: #aa0000; /* Tom mais escuro no hover */
+}
+
+/* --------------------------------------------------
+   Link de Nova Entrada
+-------------------------------------------------- */
+
+.new-entry-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #fff; /* Branco para o fundo do link */
+    color: #000; /* Preto para o texto do link */
+    text-decoration: none;
+    border: 2px solid #cc0000; /* Borda vermelha no link */
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para o hover */
+}
+
+.new-entry-link:hover {
+    background-color: #cc0000; /* Vermelho no hover */
+    color: #fff;
+}
+
+/* --------------------------------------------------
+   Rodapé
+-------------------------------------------------- */
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #fff; /* Branco para o texto do rodapé */
+    font-size: 0.8em;
+    background-color: #000; /* Preto para o fundo do rodapé */
+    border-radius: 0 0 8px 8px;
+}
+
+.footer p {
+    margin: 0;
+}
